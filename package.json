@@ -12,7 +12,8 @@
     "jquery": "^3.7.1",
     "next": "15.3.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-select": "^5.10.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

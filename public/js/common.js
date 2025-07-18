@@ -43,7 +43,8 @@ jQuery(document).ready(function($){
     
      
     /* ===== For menu animation === */
-    $(".navbar-toggler").click(function(){
+    $(".navbar-toggler").click(function(e){
+        e.stopPropagation();
         $(".navbar-toggler").toggleClass("open");
         $(".navbar-toggler .stick").toggleClass("open");
         $('body,html' ).toggleClass("open-nav");
