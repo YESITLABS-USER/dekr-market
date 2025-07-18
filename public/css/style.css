@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://web-fonts.davemaxwellmaxwell.workers.dev/fonts/fonts.css'); 
 
 body,
 html {
@@ -10,7 +11,7 @@ body,html{
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--body-font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     width: 100%;
@@ -24,8 +25,9 @@ body {
 }
 :root {
     scroll-behavior: inherit;
-    --heading-font: "Playfair Display", serif;
-    ---heading-para: "Geist Mono", monospace;
+    --heading-font:  'Austin News Headline Cond Web', serif;
+    --body-font:  'Graphik Web', sans-serif;
+    --heading-para: "Geist Mono", monospace;
     --theme-clr-1: #536B31;
     --theme-clr-2: #425627;
     --theme-clr-3: #0C3434;
@@ -83,7 +85,7 @@ h1,.h1-title {
 h2,
 .h2-title {
   font-weight: 500;
-  font-size: 70px;
+  font-size: 86px;
   line-height: 1;
   color: var(--theme-clr-1);
   font-family: var(--heading-font);
@@ -91,7 +93,7 @@ h2,
 h3,
 .h3-title {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 48px;
   line-height: 1.2;
   font-family: var(--heading-font);
 }
@@ -540,21 +542,20 @@ input[type="submit"]:hover {
     font-size: 18px;
     font-weight: 300;
     color: var(--theme-clr-1);
-    font-family: var(---heading-para);
+    font-family: var(--heading-para);
     text-transform: uppercase;
 }
-.sec-head.head-white h2{
-    color: var(--white);
-}
-.sec-head.head-white p{
+.sec-head.head-white h2,.sec-head.head-white p,.sec-head.head-white .head-para{
     color: var(--white);
 }
 .cmn-100{
     padding: 100px 0;
 }
 .head-para{
-    font-weight: 200;
-    font-family: var(---heading-para);
+    font-weight: 300;
+    font-family: var(--heading-para);
+    text-transform: uppercase;
+    color: var(--theme-clr-1);
 }
 .sec-head:last-child{
     margin-bottom: 0;
@@ -581,6 +582,9 @@ input[type="submit"]:hover {
 .circle-texture{
     width: 100%;
     top: -300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     mix-blend-mode: screen;
     z-index: -1;
 }
@@ -668,6 +672,7 @@ input[type="submit"]:hover {
     color: var(--theme-clr-1);
     font-weight: 400;
     margin-bottom: 30px;
+    font-family: var(--body-font);
 }
 .goals-right .goals-list{
     margin-bottom: 30px;
@@ -680,14 +685,14 @@ input[type="submit"]:hover {
     padding-left: 20px;
 }
 .goals-right .goals-list ul li{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .goals-right .goals-list ul li:last-child{
     margin-bottom: 0;
 }
-.gaols-left .sec-head h2{
+/* .gaols-left .sec-head h2{
     letter-spacing: -5px;
-}
+} */
 
 /* End Of Goals Section */
 
@@ -744,12 +749,13 @@ input[type="submit"]:hover {
     border: 0;
 }
 .hw-cmn-sec .sec-head h2{
-    font-size: 36px;
-    line-height: 1.5;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 .hw-cmn-sec .sec-head p{
     font-weight: 200;
-    max-width: 350px;
+    max-width: 320px;
 }
 .cmn-list-wrp .cmn-list ul{
     padding-left: 30px;
@@ -762,7 +768,7 @@ input[type="submit"]:hover {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
-    font-family: var(---heading-para);
+    font-family: var(--heading-para);
     color: var(--warm-pink);
 }
 .bad-habits-card p{
@@ -785,14 +791,21 @@ input[type="submit"]:hover {
 .hw-cmn-sec .cmn-para p{
     color: var(--warm-pink);
 }
-.whistle-texture{
-    left: -200px;
+.whistle-texture {
+    left: -150px;
     top: auto;
     bottom: 5%;
     opacity: 0.3;
     max-width: 1000px;
     width: 100%;
     mix-blend-mode: multiply;
+    max-height: 800px;
+    height: 100%;
+}
+.whistle-texture img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .how-works-sec::before{
     content: "";
@@ -834,6 +847,7 @@ input[type="submit"]:hover {
 }
 .performance-sec{
     background: var(--theme-clr-3);
+    padding: 80px 0;
 }
 .sec-head.head-warm-pink h2,.sec-head.head-warm-pink p,.performance-inr p{
     color: var(--warm-pink);
@@ -841,6 +855,9 @@ input[type="submit"]:hover {
 .performance-sec-notes{
     margin-top: 40px;
     text-align: center;
+}
+.performance-sec-notes>p{
+    margin-bottom: 30px;
 }
 
 /* End Of Performance Section */
@@ -858,7 +875,11 @@ input[type="submit"]:hover {
 }
 .community-sec{
     overflow: hidden;
-    background: linear-gradient(-180deg, var(--warm-pink) 50%, transparent 50%);
+    /* background: linear-gradient(-180deg, var(--warm-pink) 50%, transparent 50%); */
+}
+.community-wrp{
+    background: var(--warm-pink);
+    overflow: hidden;
 }
 .waitlist-inr{
     position: relative;
@@ -891,7 +912,7 @@ input[type="submit"]:hover {
     padding-left: 25px;
 }
 .waitlist-right .cmn-list ul li,.community-inr .cmn-list-wrp ul li{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .waitlist-right .cmn-list ul li:last-child,.community-inr .cmn-list-wrp ul li:last-child{
     margin-bottom: 0;
@@ -909,6 +930,12 @@ input[type="submit"]:hover {
 }
 .community-sec .texture{
     z-index: 1;
+    height: 100%;
+    top: 0;
+}
+.community-sec .texture img{
+    /* height: 100%; */
+    object-fit: contain;
 }
 
 /* End of Commutniy Section */
@@ -1044,6 +1071,7 @@ footer{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 6px;
     width: 100%;
 }
 .navbar-inr-wrp .navbar-brand{
@@ -1051,6 +1079,31 @@ footer{
 }
 
 /* End Of SS160725 */
+
+/* SS180725 Begin */
+
+.main-head.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+    animation: headown 0.5s forwards;
+}
+.main-head.fixed .navbar{
+    padding: 15px 0;
+}
+@keyframes headown{
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0);}
+}
+.waitlist-para a{
+    font-weight: 600;
+    text-decoration: underline !important;
+}
+
+/* End Of SS180725 */
 
 
 /* -----Responsive Css------ */
@@ -1063,9 +1116,12 @@ footer{
 
 
 @media only screen and (max-width: 1599px){
-    h1, .h1-title {
+    /* h1, .h1-title {
         font-size: 100px;
-    }
+    } */
+    h2,
+.h2-title{
+font-size: 82px;}
     .hero-content {
         width: 60%;
         padding-left: 100px;
@@ -1095,9 +1151,9 @@ footer{
         font-size: 20px;
         margin-bottom: 40px;
     }
-    .gaols-left .sec-head h2 {
+    /* .gaols-left .sec-head h2 {
         letter-spacing: -3px;
-    }
+    } */
     .cmn-100 {
         padding: 70px 0;
     }
@@ -1161,7 +1217,7 @@ footer{
     }
     h2, .h2-title {
         font-size: 40px;
-        letter-spacing: -1px;
+        /* letter-spacing: -1px; */
     }
     .goals-right h3 {
         font-size: 18px;
@@ -1425,11 +1481,11 @@ footer{
       -o-transition: background-color 0.5s linear;
       transition: background-color 0.5s linear;
     }
-    body.open-nav,
+    /* body.open-nav,
     html.open-nav {
       height: 100%;
       overflow: hidden;
-    }
+    } */
     .navbar .btn-wrp {
         flex-direction: column;
         width: 100%;
@@ -1650,7 +1706,7 @@ footer{
     }
     h2, .h2-title {
         font-size: 42px;
-        letter-spacing: 1px !important;
+        /* letter-spacing: 1px !important; */
     }
     .performance-table table tr th, .performance-table table tr td {
         font-size: 16px;
@@ -1713,9 +1769,9 @@ footer{
     .community-inr .head-para{
         font-size: 18px;
     }
-    .community-sec {
+    /* .community-sec {
         background: linear-gradient(-180deg, var(--warm-pink) 45%, transparent 45%);
-    }
+    } */
 
 
     .hero-images {

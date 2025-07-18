@@ -57,6 +57,29 @@ const JoinWaitList = ({ openModal }) => {
       setOpenJoinModal2(true);
     };
 
+    useEffect(() => {
+      setIsMounted(true);
+
+      const modalEl = document.getElementById("joinModal");
+
+      const handleModalHidden = () => {
+        setEmail("");
+        setFeatures([]);
+        setOpenJoinModal2(false);
+      };
+
+      if (modalEl) {
+        modalEl.addEventListener("hidden.bs.modal", handleModalHidden);
+      }
+
+      return () => {
+        if (modalEl) {
+          modalEl.removeEventListener("hidden.bs.modal", handleModalHidden);
+        }
+      };
+    }, []);
+
+
     const handleClose = () => {
       setOpenJoinModal2(false);
       setFeatures([]);
@@ -101,7 +124,7 @@ const JoinWaitList = ({ openModal }) => {
                         <div className="input-grp">
                           <label>Email</label>
                           <input
-                            type="email"
+                            type="email" value={email}
                             placeholder="you@email.com"
                             required
                             onChange={(e) => setEmail(e.target.value)}

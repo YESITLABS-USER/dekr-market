@@ -43,8 +43,7 @@ jQuery(document).ready(function($){
     
      
     /* ===== For menu animation === */
-    $(".navbar-toggler").click(function(e){
-        e.stopPropagation();
+    $(".navbar-toggler").click(function(){
         $(".navbar-toggler").toggleClass("open");
         $(".navbar-toggler .stick").toggleClass("open");
         $('body,html' ).toggleClass("open-nav");
@@ -54,17 +53,21 @@ jQuery(document).ready(function($){
     
     
     // Sticky Nav
-    /*
-        $(window).scroll(function() {     
-            var scroll = $(window).scrollTop();     
-            if (scroll > 0) { 
-                $(".main-head").addClass("fixed"); 
-            } 
-            else {
-            $(".main-head").removeClass("fixed"); 
-            }
-        })
-    */
+    
+    $(window).on('scroll', function() {
+        const scrollTop = $(this).scrollTop();
+        const $header   = $('.main-head');
+        const $body     = $('body');
+        const headerH   = $header.outerHeight();
+        if (scrollTop > headerH) {
+          $header.addClass('fixed');
+          $body.css('padding-top', headerH + 'px');
+        } else {
+          $header.removeClass('fixed');
+          $body.css('padding-top', '0');
+        }
+    });         
+    
     
     // back to top
     // if($("#scroll").length){
