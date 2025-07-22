@@ -4,6 +4,7 @@ import React from 'react'
 import shareicon from '@/assets/share-icon.svg';
 import whistle from '@/assets/whistle-texture.png';
 import Image from 'next/image';
+import { ArrowSquareOutIcon } from '@phosphor-icons/react';
 
 const HowDekrWorks = () => {
   return (
@@ -96,17 +97,32 @@ const HowDekrWorks = () => {
                                     <div className="bad-habits-card">
                                         <h3>Loss Aversion</h3>
                                         <p>Fear of losing = selling too soon. </p>
-                                        <a href="https://en.wikipedia.org/wiki/Disposition_effect" target='_blank'>Disposition Effect <Image src={shareicon} alt="Icon"/></a>
+                                        <a href="https://en.wikipedia.org/wiki/Disposition_effect" target='_blank'>Disposition Effect 
+                                        {/* <Image src={shareicon} alt="Icon"/> */}
+                                        <ArrowSquareOutIcon size={24} />
+
+
+                                        </a>
                                     </div>
                                     <div className="bad-habits-card">
                                         <h3>Overconfidence</h3>
                                         <p>Thinking you&#39;re invincible = big mistakes.</p>
-                                        <a href="https://kossolinger.com/investor-psychology-behavioral-biases-that-can-lead-to-costly-mistakes/" target='_blank'>Behavioral Biases <Image src={shareicon} alt="Icon"/></a>
+                                        <a href="https://kossolinger.com/investor-psychology-behavioral-biases-that-can-lead-to-costly-mistakes/" target='_blank'>Behavioral Biases 
+                                        {/* <Image src={shareicon} alt="Icon"/> */}
+                                        <ArrowSquareOutIcon size={24} />
+
+
+                                        </a>
                                     </div>
                                     <div className="bad-habits-card">
                                         <h3>Herd Mentality</h3>
                                         <p>Following the crowd off a cliff.</p>
-                                        <a href="https://online.mason.wm.edu/blog/behavioral-biases-that-can-impact-investing-decisions" target='_blank'>Behavioral Biases <Image src={shareicon} alt="Icon"/></a>
+                                        <a href="https://online.mason.wm.edu/blog/behavioral-biases-that-can-impact-investing-decisions" target='_blank'>Behavioral Biases 
+                                        {/* <Image src={shareicon} alt="Icon"/> */}
+                                        <ArrowSquareOutIcon size={24} />
+
+
+                                        </a>
                                     </div>
                                </div>
                             </div>
