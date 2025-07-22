@@ -3,8 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import JoinWaitList from "./JoinWaitList";
 import Image from "next/image";
-import logo from "../assets/logo.svg";
-// import logo from "@/assets/logo.svg";
+import logo from "@/assets/logo.svg";
 // import SealCheck from "@/assets/SealCheck.svg";
 import discord from "@/assets/DiscordLogo.svg";
 import { DiscordLogoIcon, SealCheckIcon } from "@phosphor-icons/react";
@@ -18,9 +17,7 @@ const Header = () => {
         <div className="container">
           <nav className="navbar navbar-expand-lg">
             <Link className="navbar-brand" href="/">
-              {/* <Image src={logo} height={100} width={100} alt="Logo" /> */}
-              <Image src="/images/logo.svg" alt="Circle texture" width={500} height={300} unoptimized/>
-
+              <Image src={logo} height={100} width={100} alt="Logo" />
             </Link>
             <button
               className="navbar-toggler navbar-toggler-main"
