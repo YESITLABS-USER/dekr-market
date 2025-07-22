@@ -12,7 +12,19 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Favicon */}
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png" />
+        <link rel="mask-icon" href="/favicon/favicon.svg" color="#5bbad5" />
+
+        {/* Web Manifest */}
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+
+        {/* PWA Icons (optional extra for Android homescreen) */}
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon/web-app-manifest-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon/web-app-manifest-512x512.png" />
 
         {/* Font Awesome (CDN) */}
         <link

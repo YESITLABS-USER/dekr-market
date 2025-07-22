@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import JoinWaitList from "./JoinWaitList";
 import Image from "next/image";
 import logo from "@/assets/logo.svg";
-import SealCheck from "@/assets/SealCheck.svg";
+// import SealCheck from "@/assets/SealCheck.svg";
 import discord from "@/assets/DiscordLogo.svg";
+import { DiscordLogoIcon, SealCheckIcon } from "@phosphor-icons/react";
 
 const Header = () => {
   const [openJoinModal, setOpenJoinModal] = useState(false);
@@ -88,11 +89,15 @@ const Header = () => {
                   data-bs-toggle="modal"
                   className="hdr-btn waitlist-btn"
                 >
-                  <Image src={SealCheck} height={0} width={0} alt="icon" /> Join the Waitlist
+                  {/* <Image src={SealCheck} height={0} width={0} alt="icon" />  */}
+                  <SealCheckIcon size={24} />
+                  Join the Waitlist
                 </a>
                 <a href="https://discord.com/invite/wQdWAVNzBN"
                       target="_blank" className="hdr-btn discord-btn">
-                  <Image src={discord} alt="icon" /> Join the Discord
+                  {/* <Image src={discord} alt="icon" />  */}
+                  <DiscordLogoIcon size={24} />
+                  Join the Discord
                 </a>
               </div>
             </div>
