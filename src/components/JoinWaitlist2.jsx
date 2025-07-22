@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import checkCircle from "@/assets/check-circle-theme.svg";
+import checkCircle from "../assets/check-circle-theme.svg";
 import Select from "react-select";
 
 const JoinWaitlist2 = ({ openModal2 }) => {

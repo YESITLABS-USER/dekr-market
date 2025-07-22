@@ -4,12 +4,12 @@ import Community from "@/components/Community";
 import HowDekrWorks from "@/components/HowDekrWorks";
 import JoinWaitList from "@/components/JoinWaitList";
 import Image from "next/image";
-import circleTexture from "@/assets/circle-tecture.png";
-import OvalImages from "@/assets/oval-texture.png";
-import homeScreen from "@/assets/home-screen.png";
-import loadScreen from "@/assets/load-screen.png";
-import discoverScreen from "@/assets/discover-screen.png";
-import coachScreen from "@/assets/coach-screen.png";
+import circleTexture from "../assets/circle-tecture.png";
+import OvalImages from "../assets/oval-texture.png";
+import homeScreen from "../assets/home-screen.png";
+import loadScreen from "../assets/load-screen.png";
+import discoverScreen from "../assets/discover-screen.png";
+import coachScreen from "../assets/coach-screen.png";
 import Link from "next/link";
 
 export default function Home() {

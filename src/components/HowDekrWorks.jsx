@@ -2,7 +2,7 @@
 
 import React from 'react'
 import shareicon from '@/assets/share-icon.svg';
-import whistle from '@/assets/whistle-texture.png';
+import whistle from '../assets/whistle-texture.png';
 import Image from 'next/image';
 import { ArrowSquareOutIcon } from '@phosphor-icons/react';
 

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import circleTexture from '@/assets/circle-tecture.png';
+// import circleTexture from '@/assets/circle-tecture.png';
+import circleTexture from '../assets/circle-tecture.png';
 
 const Community = () => {
   return (
