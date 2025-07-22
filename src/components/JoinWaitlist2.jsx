@@ -71,7 +71,9 @@ const JoinWaitlist2 = ({ openModal2 }) => {
             <div className="modal-body">
               <div className="cmn-pop-content-wrapper">
                 <div className="modal-icon">
-                  <Image src={checkCircle} alt="Icon" />
+                  {/* <Image src={checkCircle} alt="Icon" /> */}
+                  <Image src="/images/check-circle-theme" alt="check-circle-theme" width={500} height={300} unoptimized/>
+
                 </div>
                 <div className="cmn-pop-head">
                   <h2>Almost there!</h2>

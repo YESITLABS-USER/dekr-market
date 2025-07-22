@@ -11,7 +11,9 @@ const HowDekrWorks = () => {
    <>
     <div className="how-works-sec has-texture cmn-100" id='how-dekr-works'>
             <div className="texture whistle-texture">
-                <Image src={whistle} alt="texture Whistle"/>
+                {/* <Image src={whistle} alt="texture Whistle"/> */}
+                <Image src="/images/logo.svg" alt="Dekr" width={500} height={300} unoptimized/>
+
             </div>
             <div className="container">
                 <div className="how-works-inr">

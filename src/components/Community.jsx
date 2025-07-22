@@ -11,7 +11,9 @@ const Community = () => {
         <div className="community-sec"  id='community'>
 <div className="community-wrp has-texture">
             <div className="texture circle-texture">
-                <Image src={circleTexture} alt="Texture" />
+                {/* <Image src={circleTexture} alt="Texture" /> */}
+                <Image src="/images/circle-tecture.png" alt="Circle texture" width={500} height={300} unoptimized/>
+                
 </div>
     <div className="container">
                 <div className="community-inr">

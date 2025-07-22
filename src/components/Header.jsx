@@ -18,7 +18,9 @@ const Header = () => {
         <div className="container">
           <nav className="navbar navbar-expand-lg">
             <Link className="navbar-brand" href="/">
-              <Image src={logo} height={100} width={100} alt="Logo" />
+              {/* <Image src={logo} height={100} width={100} alt="Logo" /> */}
+              <Image src="/images/logo.svg" alt="Circle texture" width={500} height={300} unoptimized/>
+
             </Link>
             <button
               className="navbar-toggler navbar-toggler-main"
