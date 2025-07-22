@@ -18,7 +18,7 @@ export default function Home() {
       <div className="hero-sec has-texture">
         <div className="texture circle-texture">
           {/* <Image src={circleTexture} alt="Texture Image" /> */}
-          <Image src="/images/circle-tecture.png" alt="Circle texture" width={500} height={300} />
+          <Image src="/images/circle-tecture.png" alt="Circle texture" width={500} height={300} unoptimized/>
         </div>
         <div className="container">
           <div className="hero-inr row">
@@ -29,19 +29,19 @@ export default function Home() {
               <div className="hero-images">
                 <div className="hero-img-single">
                   {/* <Image src={homeScreen} alt="Mobile Screen Preview" /> */}
-                  <Image src="/images/home-screen.png" alt="home-screen" width={500} height={300} />
+                  <Image src="/images/home-screen.png" alt="home-screen" width={500} height={300} unoptimized/>
                 </div>
                 <div className="hero-img-single">
                   {/* <Image src={loadScreen} alt="Mobile Screen Preview" /> */}
-                  <Image src="/images/load-screen.png" alt="load-screen" width={500} height={300} />
+                  <Image src="/images/load-screen.png" alt="load-screen" width={500} height={300} unoptimized/>
                 </div>
                 <div className="hero-img-single">
                   {/* <Image src={discoverScreen} alt="Mobile Screen Preview" /> */}
-                  <Image src="/images/discover-screen.png" alt="discover-screen" width={500} height={300} />
+                  <Image src="/images/discover-screen.png" alt="discover-screen" width={500} height={300} unoptimized/>
                 </div>
                 <div className="hero-img-single">
                   {/* <Image src={coachScreen} alt="Mobile Screen Preview" /> */}
-                  <Image src="/images/coach-screen.png" alt="coach-screen" width={500} height={300} />
+                  <Image src="/images/coach-screen.png" alt="coach-screen" width={500} height={300} unoptimized/>
                 </div>
               </div>
 
@@ -80,7 +80,7 @@ export default function Home() {
       <div className="goals-sec has-texture">
         <div className="texture oval-texture">
           {/* <Image src={OvalImages} alt="Texture Oval" /> */}
-          <Image src="/images/circle-tecture.png" alt="circle-tecture" width={500} height={300} />
+          <Image src="/images/circle-tecture.png" alt="circle-tecture" width={500} height={300} unoptimized/>
         </div>
         <div className="container">
           <div className="goals-inr">
