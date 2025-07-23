@@ -80,7 +80,7 @@ export default function Home() {
       <div className="goals-sec has-texture">
         <div className="texture oval-texture">
           {/* <Image src={OvalImages} alt="Texture Oval" /> */}
-          <Image src="/images/circle-tecture.png" alt="circle-tecture" width={500} height={300} unoptimized/>
+          <Image src="/images/oval-texture.png" alt="circle-tecture" width={500} height={300} unoptimized/>
         </div>
         <div className="container">
           <div className="goals-inr">

@@ -934,8 +934,9 @@ input[type="submit"]:hover {
     top: 0;
 }
 .community-sec .texture img{
-    /* height: 100%; */
-    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* End of Commutniy Section */
@@ -1106,6 +1107,27 @@ footer{
 /* End Of SS180725 */
 
 
+/* SS230725 Begin */
+
+.navbar-brand img {
+    height: 100%;
+}
+.performance-inr .sec-head p{
+    font-family: var(--body-font);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.container{
+    padding: 0 20px;
+}
+.row {
+    --bs-gutter-x: 40px;
+}
+
+/* End Of SS230725 */
+
+
 /* -----Responsive Css------ */
 
 @media only screen and (min-width: 1400px){
@@ -1136,8 +1158,7 @@ font-size: 82px;}
 }
 @media only screen and (max-width: 1399px){
     h1, .h1-title {
-        font-size: 72px;
-        max-width: 65%;
+        max-width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1180,8 +1201,13 @@ font-size: 82px;}
     .how-work-cards-row .col-lg-3{
         width: 50%;
     }
-    .hw-cmn-sec .sec-head h2 {
-        font-size: 38px;
+    .circle-texture img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .circle-texture{
+        top: -220px;
     }
 }
 @media only screen and (max-width: 1199px){
@@ -1523,7 +1549,7 @@ font-size: 82px;}
         width: 100px;
     }
     h1, .h1-title {
-        font-size: 80px;
+        font-size: 96px;
         max-width: 100%;
     }
     .hero-images {
@@ -1629,7 +1655,11 @@ font-size: 82px;}
         font-size: 48px;
     }
     .hw-work-financial-sec .sec-head h2,.hw-work-badhabits-sec .sec-head h2{
-        font-size: 30px;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .hw-cmn-sec.hw-work-badhabits-sec .sec-head p{
+        max-width: 260px;
     }
     .hw-cmn-sec .sec-head p{
         max-width: 100%;
@@ -1668,6 +1698,9 @@ font-size: 82px;}
     }
     .ftr-title-text a{
         display: block;
+    }
+    .circle-texture {
+        top: -100px;
     }
 }
 @media only screen and (max-width: 767px){
@@ -1782,6 +1815,12 @@ font-size: 82px;}
     .hero-img-single:nth-child(3) {
         height: 360px;
     }
+
+    /* SS230725 Begin */
+    h1, .h1-title {
+        font-size: 48px;
+    }
+    /* End Of SS230725 */
 }
 @media only screen and (max-width: 575px){
     button.navbar-toggler {
@@ -1837,6 +1876,52 @@ font-size: 82px;}
     }
     /* End Of SS160725 */
 }
+
+/* SS230725 Begin */
+@media only screen and (max-width: 479px){
+    h2, .h2-title {
+        font-size: 48px;
+    }
+    .sec-head h2{
+        margin-bottom: 0;
+    }
+    .sec-head {
+        margin-bottom: 30px;
+    }
+    h3, .h3-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    .hw-cmn-sec {
+        padding-bottom: 50px;
+    }
+    .hw-cmn-sec .sec-head h2,.waitlist-left .sec-head h2{
+        font-size: 34px;
+    }
+    .performance-inr .sec-head h2{
+        margin-bottom: 25px;
+    }
+    .performance-inr .sec-head p{
+        font-size: 19px;
+    }
+    .community-sec .texture img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .policy-links {
+        display: block;
+    }
+    .policy-links a{
+        margin-left: 5px;
+    }
+    .policy-links a:first-child{
+        margin-left: 0;
+    }
+    h1, .h1-title {
+        font-size: 47px;
+    }
+}
+/* End Of SS230725 */
 
 header.main-head {
     position: sticky;

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import shareicon from '@/assets/share-icon.svg';
-import whistle from '../assets/whistle-texture.png';
+// import whistle from '../assets/whistle-texture.png';
 import Image from 'next/image';
 import { ArrowSquareOutIcon } from '@phosphor-icons/react';
 
@@ -12,7 +12,7 @@ const HowDekrWorks = () => {
     <div className="how-works-sec has-texture cmn-100" id='how-dekr-works'>
             <div className="texture whistle-texture">
                 {/* <Image src={whistle} alt="texture Whistle"/> */}
-                <Image src="/images/logo.svg" alt="Dekr" width={500} height={300} unoptimized/>
+                <Image src="/images/whistle-texture.png" alt="Dekr" width={500} height={300} unoptimized/>
 
             </div>
             <div className="container">
