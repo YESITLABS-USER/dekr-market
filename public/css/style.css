@@ -811,7 +811,7 @@ input[type="submit"]:hover {
     opacity: 0.3;
     max-width: 1000px;
     width: 100%;
-    mix-blend-mode: multiply;
+    mix-blend-mode: color-burn;
     max-height: 800px;
     height: 100%;
 }
@@ -900,7 +900,7 @@ input[type="submit"]:hover {
     padding: 80px 0;
 }
 .waitlist-right h3{
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 30px;
     font-family: var(--body-font);
     font-weight: 600;
@@ -909,7 +909,12 @@ input[type="submit"]:hover {
     margin-bottom: 30px;
 }
 .waitlist-right .cmn-list p{
-    margin-bottom: 15px;
+    margin-bottom: 3px;
+    font-size: 24px;
+}
+.waitlist-para{
+    color: var(--para-clr);
+    font-size: 24px;
 }
 .waitlist-right .cmn-btn{
     margin-bottom: 30px;
@@ -922,17 +927,21 @@ input[type="submit"]:hover {
 }
 .waitlist-right .cmn-list ul{
     list-style: disc;
-    padding-left: 25px;
+    padding-left: 35px;
 }
 .waitlist-right .cmn-list ul li,.community-inr .cmn-list-wrp ul li{
     margin-bottom: 5px;
+}
+.waitlist-right .cmn-list ul li{
+    font-size: 24px;
+    margin-bottom: 3px;
 }
 .waitlist-right .cmn-list ul li:last-child,.community-inr .cmn-list-wrp ul li:last-child{
     margin-bottom: 0;
 }
 .community-inr .cmn-list-wrp{
-    max-width: 450px;
-    margin: 0 auto;
+    max-width: 406px;
+    margin: 0 auto 46px;
     text-align: left;
 }
 .community-inr .cmn-list-wrp .cmn-list{
@@ -941,10 +950,10 @@ input[type="submit"]:hover {
 .community-inr .cmn-list-wrp>p{
     margin-bottom: 30px;
 }
-.community-sec .texture{
+.community-sec .texture {
     z-index: 1;
-    height: 100%;
-    top: 0;
+    height: calc(100% + 250px);
+    top: -250px;
 }
 .community-sec .texture img{
     height: 100%;
@@ -970,15 +979,17 @@ footer{
 .ftr-title-text a{
     color: #8098C0;
     font-weight: 600;
+    text-decoration: underline !important;
 }
 .ftr-widget{
     border-top: 1px solid #FAE8DD;
     max-width: 480px;
     margin: 0 auto;
-    padding: 40px 30px 0;
+    padding: 30px 30px 0;
 }
 .ftr-widget p{
     font-weight: 400;
+    line-height: 1.3;
 }
 .copyright{
     margin-bottom: 40px;
@@ -1141,6 +1152,17 @@ footer{
 
 /* End Of SS230725 */
 
+/* QA */
+
+.hw-work-financial-sec.hw-cmn-sec .row,.hw-work-badhabits-sec.hw-cmn-sec .row{
+    --bs-gutter-x: 58px;
+}
+.community-inr>*,.community-inr .sec-head h2{
+    color: var(--theme-clr-2);
+}
+
+/* QA */
+
 
 /* -----Responsive Css------ */
 
@@ -1201,7 +1223,7 @@ footer{
         gap: 6px;
     }
     .gaols-left,.goals-right {
-        max-width: 430px;
+        max-width: 440px;
     }
     .how-work-cards-row .row{
         --bs-gutter-y: 40px;
@@ -1896,6 +1918,13 @@ footer{
         font-size: 48px;
     }
     /* End Of SS230725 */
+
+    /* QA */
+    .community-sec .texture {
+        z-index: 1;
+        height: 100%;
+        top: 0;
+    }
 }
 @media only screen and (max-width: 575px){
     button.navbar-toggler {
