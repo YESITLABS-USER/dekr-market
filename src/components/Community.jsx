@@ -58,7 +58,8 @@ const Community = () => {
                                     </ul>
                                 </div>
                                 <a href="#url" className="cmn-btn"  data-bs-target="#joinModal" data-bs-toggle="modal">Join the Waitlist</a>
-                                <p className='waitlist-para'>Or come say hello in <a href="#url">Discord</a> —we're building something special.</p>
+                                <p className='waitlist-para'>Or come say hello in <a href="https://discord.com/invite/wQdWAVNzBN"
+                                                      target="_blank">Discord</a> —we're building something special.</p>
                             </div>
                         </div>
                     </div>
