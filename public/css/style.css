@@ -2053,3 +2053,10 @@ header.main-head {
     top: 0;
     z-index: 9;
 }
+
+.discord-btn {
+    background: #EFDBA2;
+    border: solid #615661;
+    border-width: 1px 1px 3px 1px;
+    color: #615661;
+}
