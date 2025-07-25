@@ -2062,3 +2062,9 @@ header.main-head {
     top: 0;
     z-index: 9;
 }
+
+.performance-sec-notes .head-para{
+    font-size: 18px;
+    font-weight: 300;
+}
+ 
