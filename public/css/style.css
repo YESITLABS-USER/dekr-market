@@ -498,6 +498,7 @@ input[type="submit"]:hover {
     border: solid var(--theme-clr-2);
     border-width: 1px 1px 3px 1px;
     border-radius: 6px;
+    font-size: 18px;
     transition:  all ease-in-out .3s;
 }
 .hdr-btn:hover{
@@ -509,6 +510,9 @@ input[type="submit"]:hover {
 }
 .discord-btn {
     background: #EFDBA2;
+    border: solid #615661;
+    border-width: 1px 1px 3px 1px;
+    color: #615661;
 }
 .cmn-btn{
     background: var(--btn-bg);
@@ -696,7 +700,7 @@ input[type="submit"]:hover {
 }
 .goals-right .goals-list ul{
     list-style: disc;
-    padding-left: 20px;
+    padding-left: 35px;
 }
 .goals-right .goals-list ul li{
     margin-bottom: 5px;
@@ -796,6 +800,7 @@ input[type="submit"]:hover {
     text-transform: uppercase;
     color: var(--link-clr-2);
     font-family: var(--heading-para);
+    font-size: 16px;
 }
 .bad-habits-card{
     margin-bottom: 35px;
@@ -874,7 +879,11 @@ input[type="submit"]:hover {
 }
 .performance-sec-notes>p{
     margin-bottom: 30px;
+    font-weight: 400;
+}
+.performance-sec-notes.head-para{
     font-size: 18px;
+    font-weight: 300;
 }
 
 /* End Of Performance Section */
@@ -2052,11 +2061,4 @@ header.main-head {
     position: sticky;
     top: 0;
     z-index: 9;
-}
-
-.discord-btn {
-    background: #EFDBA2;
-    border: solid #615661;
-    border-width: 1px 1px 3px 1px;
-    color: #615661;
 }
